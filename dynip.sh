@@ -4,20 +4,23 @@
 
 # Run: sudo mkdir /usr/local/share/hetzner
 # Run: sudo nano /usr/local/share/hetzner/dynip.sh
-# Run: sudo chmod +x usr/local/share/hetzner/dynip.sh
+# Run: sudo chmod +x /usr/local/share/hetzner/dynip.sh
 
 # The script will create log file and current IP address file in the same directory
 
-# From Hetzner DNS service, obtain API access key/token and Zone ID (which can be found in URL when you access a zone file via browser
+# From Hetzner DNS service, obtain API access key/token and Zone ID (which can be found in URL when you access a zone file via browser)
 
-# You need to also obtain record ID, which can be obtained by using API access token and zone ID by running this curl command from
+# You need to also obtain record ID, which can be obtained by using API access token and zone ID and running this curl command from
 # hetzner API documentation: https://dns.hetzner.com/api-docs/#operation/GetRecords
 
-# In the script, look for XYZ. Any value that equal XYZ much be changed by you in order for the script to work for you. 
+# In this script, look for XYZ. Any value that equals XYZ must be changed by you in order for the script to work properly. 
 
 # After modifying and saving the script, you can schedule these cron jobs:
 # first cron job will run the script every two minutes 
 # second cron job will reset the log file at midnight, every night. 
+
+# Run: sudo crontab -e
+# Add the following two lines (while leaving # out) and save
 
 # */2 * * * * /bin/bash /usr/local/share/hetzner/proxy.sh>/dev/null 2>&1
 # 0 0 * * * rm /usr/local/share/hetzner/update-ipadd.log>/dev/null 2>&1
