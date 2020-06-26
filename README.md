@@ -2,14 +2,14 @@
 Script to update Hetzner DNS records with dynamic IP as the IP address changes
 
 ## Description
-Hetzner has an amazing DNS service where you can host DNS zones for your domains. That way, you can use Hetzner DNS as your Nameservers as opposed to the DNS service offered by your domain registerar. 
+Hetzner has an amazing DNS service where you can host DNS zones for your domains. That way, you can use Hetzner DNS as your Nameservers as opposed to the DNS service offered by your domain registrar: https://dns.hetzner.com/
 
-Hetzner DNS service is completely free, fast, and reliable. Unlike some registerar's DNS service, you are in complete control of the zone files. There are no limits to the number of querries your domains recieve either. 
+Hetzner DNS service is completely free, fast, and reliable. Unlike some registrar's DNS service, you are in complete control of the zone files. There are no limits to the number of querries your domains recieve either. 
 
 ## DNS Record With Dynamic IP
-When you are hosting a server or service (maybe at home) where you are provided with a dynamic IP address by your ISP, if your IP address is changed suddenly, you much also change the DNS record using this IP address; otherwise, you will lose access to the server/service. 
+When you are hosting a server or service (maybe at home) where you are provided with a dynamic IP address by your ISP, if your IP address is changed suddenly, you must also change the DNS record using this IP address; otherwise, you will lose access to the server/service. 
 
-To manage the dynamic IP, we can run a script every minute or two to check to see if the IP address has changed. If there was a change, we can then immediately make an API call to Hetzner DNS service and update the DNS record with the new IP.
+To manage the dynamic IP, we can run an ultra light script every minute or two to check to see if the IP address has changed. If there was a change, we can then immediately make an API call to Hetzner DNS service and update the DNS record with the new IP.
 
 ## Install and Usage Steps
 
