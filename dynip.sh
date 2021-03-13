@@ -22,7 +22,7 @@
 # Run: sudo crontab -e
 # Add the following two lines (while leaving # out) and save
 
-# */2 * * * * /bin/bash /usr/local/share/hetzner/proxy.sh>/dev/null 2>&1
+# */2 * * * * /bin/bash /usr/local/share/hetzner/dynip.sh>/dev/null 2>&1
 # 0 0 * * * rm /usr/local/share/hetzner/update-ipadd.log>/dev/null 2>&1
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
