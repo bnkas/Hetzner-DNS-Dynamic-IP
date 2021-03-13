@@ -38,7 +38,7 @@ curl "https://dns.hetzner.com/api/v1/records?zone_id=XYZ" \
 
 - `sudo crontab -e`
 - Add the following two lines and save
-- `*/2 * * * * /bin/bash /usr/local/share/hetzner/proxy.sh>/dev/null 2>&1`
+- `*/2 * * * * /bin/bash /usr/local/share/hetzner/dynip.sh>/dev/null 2>&1`
 - `0 0 * * * rm /usr/local/share/hetzner/update-ipadd.log>/dev/null 2>&1`
 - Watch log file and Hetzner DNS portal to see the IP address change.
 
