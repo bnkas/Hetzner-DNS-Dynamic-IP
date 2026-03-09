@@ -1,3 +1,6 @@
+# Archived 
+Hetzner changed their DNS APIs when they made upgrades to the DNS service. This script only works for Hetzner legacy DNS APIs which are no longer supported. 
+
 # Hetzner DNS Dynamic IP
 Script to update Hetzner DNS records with dynamic IP as the IP address changes
 
